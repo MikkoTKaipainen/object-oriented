@@ -9,7 +9,10 @@ namespace TaskPerson
             Person personMikko = new Person();
             personMikko.Name = "Mikko K";
             personMikko.GrowOld();
+            personMikko.GrowOld(24);
+            Console.WriteLine($"Mikon ikä: {personMikko.GetAge()}");
             personMikko.PrintPersonInfo();
+
 
             Person newPerson = new Person("Johnson MacDickfield", 89);
             newPerson.PrintPersonInfo();
