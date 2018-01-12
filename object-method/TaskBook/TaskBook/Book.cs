@@ -37,17 +37,16 @@ namespace TaskBook
         public void PrintBookInfo()
         {
             Console.WriteLine($"Title: {Title} \nAuthor: {Author} \nId: {Id} \nPrice: {Price}");
-            Console.WriteLine($"{CompareBook()}");
         }
 
         public string CompareBook(Book book)
         {
             if (this.Price > book.Price)
-                return ($"{this.Title} on kalliimpi kuin {book.Title} kirja");
+                return $"{this.Title} on kalliimpi kuin {book.Title}";
             else if (this.Price < book.Price)
-                return ($"{this.Title} on halvempi kuin {book.Title} kirja");
+                return $"{this.Title} on halvempi kuin {book.Title}";
             else
-                return ($"{this.Title} on saman hintainen kuin {book.Title} kirja");
+                return $"{this.Title} on saman hintainen kuin {book.Title}";
         }
 
     }
