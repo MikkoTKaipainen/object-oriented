@@ -9,9 +9,7 @@ namespace TaskCompany
             Company company = new Company();           
 
             company.AskData();
-
             Console.WriteLine();
-
             company.ShowCompanyInfo();
 
             Console.ReadKey();

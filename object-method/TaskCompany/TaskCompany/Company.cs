@@ -6,14 +6,21 @@ namespace TaskCompany
 {
     class Company
     {
-        //Muodostetaan kentät
         public string Title;
         public string Address;
         public int Phone;
         public double Income;
         public double Expense;
 
-        //Methods
+        public Company(Company company1)
+        {
+            Title = company1.Title;
+            Address = company1.Address;
+            Phone = company1.Phone;
+            Income = company1.Income;
+            Expense = company1.Expense;
+        }
+
         public void AskData()
         {
             Console.WriteLine("Company name: ");
@@ -37,7 +44,17 @@ namespace TaskCompany
                 $"\nCompany expense: {Expense}");
         }
 
+        public void OutcomePercentage(double money)
+        {
+            money = ((Income - Expense)/Expense * 100);
+        }
 
+        public void CompanySituation(double money)
+        {
+            if (money < Expense)
+                Console.WriteLine($"Your company's profit is poor");
+            if else ()
+        }
     }
 
 
