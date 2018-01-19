@@ -12,14 +12,14 @@ namespace TaskCompany
         public double Income;
         public double Expense;
 
-        public Company(Company company1)
-        {
-            Title = company1.Title;
-            Address = company1.Address;
-            Phone = company1.Phone;
-            Income = company1.Income;
-            Expense = company1.Expense;
-        }
+        //public Company(Company copyCompany)
+        //{
+        //    Title = copyCompany.Title;
+        //    Address = copyCompany.Address;
+        //    Phone = copyCompany.Phone;
+        //    Income = copyCompany.Income;
+        //    Expense = copyCompany.Expense;
+        //}
 
         public void AskData()
         {
@@ -44,16 +44,20 @@ namespace TaskCompany
                 $"\nCompany expense: {Expense}");
         }
 
-        public void OutcomePercentage(double money)
+        public void OutcomePercentage()
         {
-            money = ((Income - Expense)/Expense * 100);
+            double money = ((Income - Expense)/Expense * 100);
+            CompanySituation(money);
         }
 
-        public void CompanySituation(double money)
+        private void CompanySituation(double money)
         {
-            if (money < Expense)
-                Console.WriteLine($"Your company's profit is poor");
-            if else ()
+            if (money < 100)
+                Console.WriteLine($"Your company {Title} profit is poor");
+            if (money >= 100 && money < 200)
+                Console.WriteLine($"Your company {Title} profit is OK");
+            if (money >= 200 && money < 300)
+                Console.WriteLine($"Your company {Title} profit is superb");   
         }
     }
 
