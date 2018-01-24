@@ -7,29 +7,32 @@ namespace TaskEmployee
     class Employee
     {
         public string Name;
-        public int Id;
+        private int Id;
         public string Position;
-        public int Salary;
+        private int Salary;
 
-        public void EmployeeInfo()
+        public Employee(string name, int id, string position, int salary)
         {
-            Name = "Jorma";
-            Id = 101;
-            Position = "Boss";
-            Salary = 10000;
+            Name = name;
+            Id = id;
+            Position = position;
+            Salary = salary;
         }
 
-        public void CompareSalary()
+        public void CompareSalary(Employee person)
         {
-            
+            if (Salary < person.Salary)
+                Console.WriteLine($"{person.Name}'s salary is larger than {Name}'s salary");
+            else
+                Console.WriteLine($"{Name}'s salary is larger than {person.Name}'s salary");
         }
 
         public void PrintEmployeeInfo()
         {
-            Console.WriteLine($"{Name} \n" +
-                $"{Id} \n" +
-                $"{Position} \n" +
-                $"{Salary}");
+            Console.WriteLine($"Name: {Name} \n" +
+                $"Id: {Id} \n" +
+                $"Position: {Position} \n" +
+                $"Salary: {Salary}");
         }
 
 
