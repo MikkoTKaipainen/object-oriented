@@ -7,9 +7,9 @@ namespace TaskEmployee
     class Employee
     {
         public string Name;
-        private int Id;
+        int Id;
         public string Position;
-        private int Salary;
+        int Salary;
 
         public Employee(string name, int id, string position, int salary)
         {
