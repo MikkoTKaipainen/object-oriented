@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TaskTicketprice
+namespace TaskBookAuthor
 {
-    class Ticketprice
+    class Book
     {
     }
 }
