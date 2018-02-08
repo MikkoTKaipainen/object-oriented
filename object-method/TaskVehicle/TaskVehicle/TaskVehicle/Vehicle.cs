@@ -21,10 +21,10 @@ namespace TaskVehicle
 
         public Vehicle()
         {
-            _type = "unknown";
-            _model = "unknown";
-            _year = 0000;
-            _price = 00000;
+            _type = "Car";
+            _model = "Audi";
+            _year = 2017;
+            _price = 25999.99;
         }
 
         public virtual string PrintVehicleInfo()

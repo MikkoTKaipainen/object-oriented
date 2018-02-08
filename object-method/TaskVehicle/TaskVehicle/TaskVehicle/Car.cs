@@ -23,16 +23,16 @@ namespace TaskVehicle
 
         public Car()
         {
-            _engineSize = "unknown";
-            _carModel = "unknown";
-            _doorNumber = 0;
+            _engineSize = "Large";
+            _carModel = "Sedan";
+            _doorNumber = 3;
         }
 
         public override string PrintVehicleInfo()
         {
-            return $"{base.PrintVehicleInfo()} Engine size:{_engineSize}\n" +
+            return $"{base.PrintVehicleInfo()}Engine size:{_engineSize}\n" +
                 $"Car model:{_carModel}\n" +
-                $"Door number:{_doorNumber}\n");
+                $"Door number:{_doorNumber}\n";
         }
     }
 }
