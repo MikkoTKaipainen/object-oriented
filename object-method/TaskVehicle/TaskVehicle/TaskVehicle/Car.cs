@@ -17,12 +17,18 @@ namespace TaskVehicle
             _doorNumber = doorNumber;
         }
 
+        public Car(string type, string model, int year, double price) : base(type, model, year, price)
+        {
+        }
+
         public Car()
         {
             _engineSize = "Large";
             _carModel = "Sedan";
             _doorNumber = 3;
         }
+
+
 
         public override string PrintVehicleInfo()
         {
