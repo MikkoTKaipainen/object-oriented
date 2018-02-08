@@ -10,12 +10,8 @@ namespace TaskVehicle
         protected string _carModel;
         protected int _doorNumber;
 
-        public Car(string type, string model, int year, double price, string engineSize, string carModel, int doorNumber)
+        public Car(string engineSize, string carModel, int doorNumber)
         {
-            _type = type;
-            _model = model;
-            _year = year;
-            _price = price;
             _engineSize = engineSize;
             _carModel = carModel;
             _doorNumber = doorNumber;
