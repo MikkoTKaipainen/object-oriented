@@ -11,6 +11,9 @@ namespace TaskVehicle
 
             Car car1 = new Car();
             Console.WriteLine(car1.PrintVehicleInfo());
+
+            Lorry lorryConsume = new Lorry();
+            Console.WriteLine(lorryConsume.PrintVehicleInfo());
             Console.WriteLine($"Press any key to exit...");
             Console.ReadKey();
         }
