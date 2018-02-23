@@ -6,27 +6,27 @@ namespace TaskInterface
 {
     class Product : IProduct
     {
-        private string name;
-        private int aprice;
-        private int amount;
+        private string _name;
+        private int _aprice;
+        private int _amount;
 
         public Product(string name, int aprice, int amount)
         {
-            this.name = name;
-            this.aprice = aprice;
-            this.amount = amount;
+            _name = name;
+            _aprice = aprice;
+            _amount = amount;
         }
 
         public override string ToString()
         {
-            return $"{name} "+
-                $"{aprice}€ "+
-                $"{amount}kpl";
+            return $"{_name} "+
+                $"{_aprice}€ "+
+                $"{_amount}kpl";
         }
 
         public string GetProduct(string name)
         {
-            if(this.name == name)
+            if(_name == name)
             {
                 Console.WriteLine("Tuote löytyi!");
                 return name;

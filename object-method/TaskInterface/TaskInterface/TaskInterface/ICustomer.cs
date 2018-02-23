@@ -6,7 +6,7 @@ namespace TaskInterface
 {
     interface ICustomer
     {
-        string GetCustomer();
-        int CountBonus();
+        string GetCustomer(string name);
+        double CountBonus(double value, double bonus);
     }
 }
