@@ -4,9 +4,9 @@ using System.Text;
 
 namespace TaskInterface
 {
-    interface IProduct
+    interface ICustomer
     {
-        string GetProduct(string name);
-        int CountValue(int value);
+        string GetCustomer();
+        int CountBonus();
     }
 }
