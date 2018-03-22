@@ -20,7 +20,20 @@ namespace TaskInterface
             {
                 Console.WriteLine(s.ToString());
             }
-            
+
+            List<Customer> customer = new List<Customer>();
+            customer.Add(new Customer("Dick Johnson", 1200.20));
+            customer.Add(new Customer("John McMace", 5500.20));
+            customer.Add(new Customer("Pepe", 3200.55));
+
+            Console.WriteLine(customer[1].GetCustomer("John McMace "));
+            Console.WriteLine(customer[1].CountBonus(0.00,0.00));
+
+            foreach (var c in customer)
+            {
+                Console.WriteLine(c.ToString());
+            }
+
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }

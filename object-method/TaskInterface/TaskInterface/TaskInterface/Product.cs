@@ -40,7 +40,7 @@ namespace TaskInterface
 
         public int CountValue(int value)
         {
-            value = aprice * amount;
+            value = _aprice * _amount;
             return value;
         }
     }
